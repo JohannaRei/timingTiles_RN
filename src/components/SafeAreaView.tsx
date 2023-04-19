@@ -17,7 +17,7 @@ const SafeAreaView = ({children, style}: Props) => {
   const headerHeight = useHeaderHeight();
 
   return (
-    <SafeArea style={[styles.container, style, {paddingTop: headerHeight}]}>
+    <SafeArea style={[styles.container, style, {marginTop: headerHeight}]}>
       {children}
     </SafeArea>
   );
