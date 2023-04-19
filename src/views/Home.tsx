@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {Body1} from '../components/Text';
 import {colors} from '../theme';
 import SafeAreaView from '../components/SafeAreaView';
@@ -6,7 +6,9 @@ import SafeAreaView from '../components/SafeAreaView';
 const HomeView = () => {
   return (
     <SafeAreaView>
-      <Body1>Home</Body1>
+      <View style={{justifyContent: 'center', alignItems: 'center'}}>
+        <Body1>Home</Body1>
+      </View>
     </SafeAreaView>
   );
 };
